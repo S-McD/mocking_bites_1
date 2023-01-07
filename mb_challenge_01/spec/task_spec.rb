@@ -11,4 +11,10 @@ RSpec.describe Task do
     task.mark_complete
     expect(task.complete?).to eq true
   end
+  it "checkes if a task has been marked as complete" do
+    task = Task.new("Walk the dog")
+    task_2 = Task.new("Wash the dog")
+    task.mark_complete
+    expect(task.complete?).to eq true
+  end
 end
